@@ -36,4 +36,5 @@ done
 
 for i in `cat $HBASE_CONF_DIR/regionservers`; do
   deploy $HDP/hbase-regionserver/
+  deploy $HDP/hbase-master/
 done
