@@ -25,7 +25,6 @@ echo "disable 'usertable'; drop 'usertable'" | hbase shell
 # install git and others
 apt-get install git python-pip maven python-protobuf
 yum -y install git python-pip maven python-protobuf
-pip install -U pytest
 
 # create Hadoop dirs 
 sudo -u hdfs hadoop fs -mkdir /user/root
