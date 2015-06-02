@@ -4,7 +4,7 @@
 head -n 1 /tmp/all_internal_nodes >/etc/hbase/conf/clients
 
 # second or third host is the master on HDP deployments
-head -n 3 /tmp/all_internal_nodes | tail -n 1  >/etc/hbase/conf/masters
+head -n 2 /tmp/all_internal_nodes | tail -n 1  >/etc/hbase/conf/masters
 
 # get rid of Ranger BS
 sed -i 's/com.xasecure.authorization.hbase.XaSecureAuthorizationCoprocessor//' /etc/hbase/conf/hbase-site.xml 
